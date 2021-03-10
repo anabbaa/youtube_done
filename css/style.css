@@ -5,31 +5,45 @@
 }
 
 body{
-    
 width: 100vw;
 height: 100vh;    
 }
-.top-menu{
+
+  .topmenu-father{
     width: 100vw;
-    height: 5vh;
+    height: 4vh;
     border: 1px red solid;
     align-items: center;
     display: flex;
     justify-content:space-around;
 flex-direction: row;
 
-  }
-  .topmenu-rightsied{
-      justify-content: flex-start;
       
   }
+  
+  .topmenu-rightside{
+display: flex; 
+justify-content: flex-start;
+align-items: center;
+ }
+ .youtube{
+     align-self:flex-start;
+ }
   .topmenu-midtsied{
-      width: 16vh;
-      height: 16vh;
+      justify-content: center;
+      align-items: center;
+      width: 32vh;
   }
-  .input{
-      width: 16vw;
+  .topmenu-leftside{
+      justify-content: flex-end;
+      align-items: center;
   }
+  .searchbox{
+      width: 66vw;
+  }
+  .block{
+      position: relative;
+}
  
   
 
