@@ -41,22 +41,27 @@ align-items: center;
   .searchbox{
       width: 66vw;
   }
-  .img{
+  .img-div{
       position: relative;
-      left: 20%;
-      width: 90vw;
+      left: 17%;
+      right: 10%;
+      width: 100vw;
+      height: 12vw;
+}
+.img{
+    width: 90vw;
+    height: 20vh;
 }
 
 .subscriber{
-    width: 83vw;
-    height: 15vh;
+    width: 90vw;
+    height: 17vh;
     background-color: black;
-    filter: grayscale(1.05);
     position: absolute;
-    left: 10%;
+    right:  10%;
+    left: 9%;
 }
  .img-subscriber{
-     position: relative;
      height: 12vh;
      width: 8vw;
  }
@@ -64,11 +69,12 @@ align-items: center;
     position: absolute;
     font-size: 2rem;
     text-align: center;
+    color: yellow;
 }
 .button-subscriber{
     position: relative;
-    left:  80%;
-    bottom:  60%;
+    left:  75%;
+    bottom:  42%;
     width: 18vh;
     height: 4vw;
     background-color: red;
@@ -77,6 +83,20 @@ align-items: center;
     font-size: 1.5rem;
 
 }
+
+.subscriber nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.subscriber nav ul li{
+    display: inline;
+}
+.subscriber nav ul li a{
+    color: white;
+}
+
 
 
 
