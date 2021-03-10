@@ -5,8 +5,8 @@
 }
 
 body{
-width: 100vw;
-height: 100vh;    
+width:50vw;
+height: 100vh;  
 }
 
   .topmenu-father{
@@ -41,9 +41,57 @@ align-items: center;
   .searchbox{
       width: 66vw;
   }
-  .block{
+  .img{
       position: relative;
+      left: 20%;
+      width: 90vw;
 }
- 
+
+.subscriber{
+    width: 83vw;
+    height: 15vh;
+    background-color: black;
+    filter: grayscale(1.05);
+    position: absolute;
+    left: 10%;
+}
+ .img-subscriber{
+     position: relative;
+     height: 12vh;
+     width: 8vw;
+ }
+.span-subscriber{
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+}
+.button-subscriber{
+    position: relative;
+    left:  80%;
+    bottom:  60%;
+    width: 18vh;
+    height: 4vw;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
