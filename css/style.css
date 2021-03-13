@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    font-size: 16px;
+}
 
 body{
     display: block;
     justify-content: center;
     align-items: center;
-
 width:100vw;
 height: 100vh;  
 }
