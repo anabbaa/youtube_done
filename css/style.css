@@ -19,7 +19,7 @@ height: 100vh;
 }
 .main-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:flex-start;
     flex-wrap: wrap;
     flex-direction: column;
@@ -138,8 +138,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .uploads-father{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     height: 500px;
@@ -148,7 +148,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .upload-title{
-    height: 50px;
+    height: 30px;
     width: 1px;
     font-size: 1.5rem;
    font-weight: bolder;
@@ -165,8 +165,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:1250px;
 }
 .upload{
-    align-self:flex-end
+    height:300px;
+    width: 1250;
 }
+
 
 .line1{
     border-top: 0.1rem gray solid;
@@ -175,8 +177,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 .line2{
-    border-top: 0.1r
-    traem gray solid;
+    border-top: 0.1rem gray solid;
     height: 4vh;
     width: 8vw;
 
