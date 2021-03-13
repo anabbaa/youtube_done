@@ -33,7 +33,7 @@ height: 100vh;
     width:20%;
     order: -1;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .header {
@@ -142,7 +142,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 500px;
+    height: 400px;
     width: 1250px;
     
 }
@@ -157,17 +157,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .videos{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: row;
     flex-wrap: wrap;
-    height:500px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    height:300px;
     width:1250px;
 }
-.upload{
-    height:300px;
-    width: 1250;
-}
+
 
 
 .line1{
