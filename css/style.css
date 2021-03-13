@@ -5,61 +5,92 @@
 }
 
 body{
-width:50vw;
+width:100vw;
 height: 100vh;  
 }
-
-  .topmenu-father{
-    width: 100vw;
-    height: 4vh;
-    border: 1px red solid;
-    align-items: center;
+.page-father{
     display: flex;
-    justify-content:space-around;
-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 100vw;
+    height: 100vh;
 
-      
-  }
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80vw;
+    height: 55vw;
+    order: 1;
+}
+.aside{
+    height: 100%;
+    align-self: flex-start;
+    width:20%;
+    order: -1;
+
+    font-size: 1.2rem;
+}
+
+.header {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu {
+    width: 30%;
+}
+.header__search {
+    width: 40%;
+
+}
+
+
+.header__icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+.search-box {
+    width: 90%;
+    
+}
+.youtube{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.fas{
+    color: grey;
+}
+.fa-adn{
+    color: rgb(0, 140, 255);
+}
+.fa-youtube{
+    color: red;
+}
+
   
-  .topmenu-rightside{
-display: flex; 
-justify-content: flex-start;
-align-items: center;
- }
- .youtube{
-     align-self:flex-start;
- }
-  .topmenu-midtsied{
-      justify-content: center;
-      align-items: center;
-      width: 32vh;
-  }
-  .topmenu-leftside{
-      justify-content: flex-end;
-      align-items: center;
-  }
-  .searchbox{
-      width: 66vw;
-  }
-  .img-div{
-      position: relative;
-      left: 17%;
-      right: 10%;
-      width: 100vw;
-      height: 12vw;
-}
 .img{
+    position: relative;
     width: 90vw;
-    height: 20vh;
+      height: 12vw;
+      left: -5%;
+      
 }
+
 
 .subscriber{
-    width: 90vw;
+    position: absolute;
+    width: 88vw;
     height: 17vh;
     background-color: black;
     position: absolute;
-    right:  10%;
-    left: 9%;
+    left: 11.5%;
 }
  .img-subscriber{
      height: 12vh;
@@ -69,7 +100,12 @@ align-items: center;
     position: absolute;
     font-size: 2rem;
     text-align: center;
-    color: yellow;
+    color: white;
+}
+.h2{
+font-size: 1rem;
+font-style: italic;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .button-subscriber{
     position: relative;
@@ -82,6 +118,10 @@ align-items: center;
     cursor: pointer;
     font-size: 1.5rem;
 
+}
+.button-subscriber:hover{
+    transition: all 1s;
+    transform: scale(1.2);
 }
 
 .subscriber nav ul{
@@ -97,37 +137,67 @@ align-items: center;
     color: white;
 }
 .uploads-father{
-    direction: flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 1500px;
-    width: 1500px;
-    background-color: yellow;
+    height: 500px;
+    width: 1250px;
+    
+}
+
+.upload-title{
+    height: 50px;
+    width: 1px;
+    font-size: 1.5rem;
+   font-weight: bolder;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.videos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:500px;
+    width:1250px;
 }
 .upload{
-    height:200px;
-    width: 200px;
-    background-color: black;
-border: 0.1rem red solid;
+    align-self:flex-end
 }
 
-    
+.line1{
+    border-top: 0.1rem gray solid;
+    height: 4vh;
+    width: 8vw;
 
+}
+.line2{
+    border-top: 0.1r
+    traem gray solid;
+    height: 4vh;
+    width: 8vw;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
+}
+.subscription{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.aside:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+}
+aside:visited{
+    transition: all 1s;
+color: blue;
+}
+aside:active{
+transition: all 1s;
+color: purple;
+}
+.subscriber nav ul li a:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+}
