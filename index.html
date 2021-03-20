@@ -12,8 +12,21 @@
 <body>
 
     <header class="header">
+        <div class="hamburger">
+            <div class="hamburger-div first-line"></div>
+            <div class="hamburger-div second-line"></div>
+            <div class="hamburger-div third-line"></div>
+            <ui class="drop-menu">
+                <li class="list-item"><a class="word">Home</a></li>
+                <li class="list-item"></li><a class="word">About</a></li>
+                <li class="list-item"></li><a class="word">Services</a></li>
+                <li class="list-item"></li><a class="word">Hilton</a></li>
+                <li class="list-item"></li><a class="word">Link</a></li>
+                </ui>
+        </div>
         <div class="header__menu">
-            <i class="fas fa-bars"></i>
+            
+
             <i class="fab fa-youtube"></i><span class="youtube">YOUTUBE</span>
         </div>
         <div class="header__search">
@@ -160,6 +173,22 @@
                 <li><a href="#"><i class="fab fa-youtube"></i>Youtube Premium</a></li></br>
                 <li><a href="#"><i class="fas fa-film"></i>Movies % Shows</a></li>
             </ul>
+            <script>
+            let clicked = false;
+        document.querySelector(".hamburger").addEventListener("click",()=>
+        {
+            clicked = !clicked;
+            if(clicked){
+                document.querySelector(".drop-menu").style.cssText  = 
+                "display: block; position: absolute;top: 3vh;left:0;z-index: 1;"}
+else{
+    document.querySelector('.drop-menu').style.cssText = "display: none;"
+            
+}
+        });
+
+
+            </script>
         
 
 
