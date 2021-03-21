@@ -82,7 +82,7 @@ display: flex;
 justify-content: space-evenly;
 align-items: flex-start;
 flex-direction: column;
-position: relative;
+
 }
 .hamburger-div{
     width: 4vw;
@@ -111,16 +111,17 @@ position: absolute;
 
 }
 
+.hamburger:hover .first-line{
+    transform: rotate(0.30turn);
+}
+
 .hamburger:hover .second-line{
     display: none;
 }
 
-.hamburger:hover .first-line{
-    transform: rotate(0.35turn);
-}
-
 .hamburger:hover .third-line{
-    transform: rotate(-0.35turn);
+    transform: rotate(-0.30turn);
+    position: absolute;
 }
 
 
