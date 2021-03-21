@@ -140,6 +140,7 @@ position: absolute;
 
 .hamburger:hover .third-line{
     transform: rotate(-0.35turn);
+    position: absolute;
 }
 
 
