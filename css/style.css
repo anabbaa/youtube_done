@@ -43,7 +43,7 @@ height: 100vh;
     justify-content: space-between;
 }
 .header__menu {
-    width: 20%;
+    width: 15%;
 }
 .header__search {
     width: 43%;
@@ -76,7 +76,7 @@ height: 100vh;
 }
 /*hamburger*/
 .hamburger{
-width: 4vh;
+width: 3vh;
 height: 4vh;
 display: flex;
 justify-content: space-evenly;
@@ -85,34 +85,62 @@ flex-direction: column;
 
 }
 .hamburger-div{
-    width: 4vw;
+    width: 3vw;
     border: 0.2rem black solid;
 
+}
+
+.drop-menu{
+    visibility: none;
+    background-color: lightgray;
+    width: 8vw;
+    height: 55vh;
+    margin-top: 1vh;
+    position: absolute;
+    animation-name: done;
+    animation-duration: 3s;
+}
+ @keyframes done {
+     0%{
+         opacity: 1;
+         transition: all 1s ease-in;
+
+     }
+     50%{
+         opacity: 0.5;
+         transition: all 2s ease-in;
+    }
+    100%{
+         opacity: 0.1;
+         transition: all 3s ease-in;
+    }
+ } 
+    
+    
+
+
+.list-item{
+    list-style: none;
+    width: 80%;
+    height: 10%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    
 }
 .word{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-
+    background-color: yellow;
 }
-.list-item{
-    list-style: none;
 
-}
-.drop-menu{
-display: none;
-background-color: yellow;
-width: 8vw;
-height: 55vh;
-margin-top: 1vh;
-position: absolute;
-
-
-}
 
 .hamburger:hover .first-line{
-    transform: rotate(0.30turn);
+    transform: rotate(0.35turn);
 }
 
 .hamburger:hover .second-line{
@@ -120,7 +148,7 @@ position: absolute;
 }
 
 .hamburger:hover .third-line{
-    transform: rotate(-0.30turn);
+    transform: rotate(-0.35turn);
     position: absolute;
 }
 
