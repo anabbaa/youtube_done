@@ -1,0 +1,68 @@
+  
+.img{
+    position: relative;
+    width: $img-width;
+      height: $img-height;
+      left: 10%;
+}
+.subscriber{
+    position: relative;
+    width: $subscriber-width;
+    height: $subscriber-height;
+    background-color: black;
+    left: 10%;
+}
+ .img-subscriber{
+     height: $img-subscriber-height;
+     width: $img-subscriber-width;
+ }
+.span-subscriber{
+    position: absolute;
+    font-size: $span-subscriber-font-size;
+    text-align: center;
+    color: white;
+}
+.h2{
+font-size: $h2-font-size;
+font-style: italic;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button-subscriber{
+    position: relative;
+    left:  75%;
+    bottom:  42%;
+    width: 18vh;
+    height: 4vw;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+.button-subscriber:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.subscriber nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.subscriber nav ul li{
+    display: inline;
+}
+.subscriber nav ul li a{
+    color: white;
+}
+
+.subscription{
+    font-size: $subscription-font-size;
+    font-weight: bolder;
+}
+
+.subscriber nav ul li a:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+}

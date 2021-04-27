@@ -1,0 +1,25 @@
+*{
+    margin: $normalized-margin;
+    padding: $normalized-pasding;
+    box-sizing: border-box;
+}
+:root{
+    font-size: $root-font-size;
+}
+body{  
+width:$body-width;
+height: $body-height;  
+}
+
+.section-main-content {
+    width: $main-content-width;
+    height: $main-content-height;
+}
+.section-aside{
+    width: $aside-width;
+    height: $aside-height;
+    position: absolute;
+    top: 5%;
+    bottom: -10%;
+    
+}

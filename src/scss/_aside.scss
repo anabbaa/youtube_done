@@ -1,0 +1,26 @@
+
+.aside{
+   
+    font-size: $aside-font-size;
+    
+    
+}
+
+.line1{
+    border-top: 0.1rem gray solid;
+    height: $line1-height;
+    width: $line1-width;
+
+}
+.line2{
+    border-top: 0.1rem gray solid;
+    height: $line1-height;
+    width: $line1-width;
+
+}
+li{
+    list-style: none;
+}
+.section-aside a{
+    color: black;
+}
