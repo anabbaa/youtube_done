@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="youtube" content="youtube" />
+    <title>youtubeapp</title>
+    <link rel="stylesheet" href="./icon/fontawesome-free-5.15.2-web/css/all.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="hamburger">
+            <div class="hamburger-div first-line"></div>
+            <div class="hamburger-div second-line"></div>
+            <div class="hamburger-div third-line"></div>
+        </div>
+            <ui class="drop-menu">
+                <li class="list-item"><a class="word">Home</a></li>
+                <li class="list-item"></li><a class="word">About</a></li>
+                <li class="list-item"></li><a class="word">Services</a></li>
+                <li class="list-item"></li><a class="word">Hilton</a></li>
+                <li class="list-item"></li><a class="word">Link</a></li>
+                </ui>
+       
+        <div class="header__menu">
+            
+
+            <i class="fab fa-youtube"></i><span class="youtube">YOUTUBE</span>
+        </div>
+        <div class="header__search">
+            <form>
+                <input class="search-box" type="text" name="search" placeholder="search" />
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header__icons">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-table"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fab fa-adn"></i>
+        </div>
+
+        </div>
+        </div>
+
+        </section>
+    </header>
+
+
+<section class="section-main-content">
+
+        <div class="main-content">
+
+            <div class="img-div">
+                <img class="img" src="./img/Screenshot from 2021-03-10 10-47-14.png" all="hilton" />
+
+            </div>
+
+
+
+
+
+            
+                <div class="subscriber">
+                    <img class="img-subscriber" src="./img/vXsT1YWm_400x400.jpg" alt="hiltons" />
+                    <span class="span-subscriber">
+                        <h1 class="h1">Paris Hilton</h1>
+                        <h2 class="h2">1.05Msubscriber</h2>
+                    </span>
+                    <button class="button-subscriber">subscriber</button>
+
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">HOME</a>
+                            <li>
+                            <li><a href="#">VIDEOS</a>
+                            <li>
+                            <li><a href="#">PLAYLIST</a>
+                            <li>
+                            <li><a href="#">COMMUNITY</a>
+                            <li>
+                            <li><a href="#">STORE</a>
+                            <li>
+                            <li><a href="#">CHANNELS</a>
+                            <li>
+                            <li><a href="#">ABOUT</a>
+                            <li>
+                            <li><a href="#">
+                                    <button><i class="fas fa-search"></i>
+                                    </button></a>
+                            <li>
+
+                        </ul>
+                    </nav>
+                
+
+            </div>
+
+
+
+
+            
+            <section class="uploads-section">
+           <div class="uploads-father">
+            <div class="upload-title">Uploads</div>
+            <div class="videos">
+                <div class="upload"><img src="./img/1.png" allt="video" /></div>
+                <div class="upload"><img src="./img/2.png" allt="video" /></div>
+                <div class="upload"><img src="./img/3.png" alt="video" /></div>
+                <div class="upload"><img src="./img/4.png" alt="video" /></div>
+                <div class="upload"><img src="./img/5.png" alt="video" /></div>
+                <div class="upload"><img src="./img/6.png" alt="video" /></div>
+                <div class="upload"><img src="./img/7.png" alt="video" /></div>
+                <div class="upload"><img src="./img/8.png" alt="video" /></div>
+                <div class="upload"><img src="./img/9.png" alt="video" /></div>
+                <div class="upload"><img src="./img/10.png" alt="video" /></div>
+                <div class="upload"><img src="./img/11.png" alt="video" /></div>
+                <div class="upload"><img src="./img/12.png" alt="video" /></div>
+            </div>
+           </div> 
+           
+               <form class="theme">
+                   <fieldset>
+                    <section class="toggle">
+                        <label class="toggle-lable"></label>
+                        <label class="switch">
+                          <input type="checkbox" class="box" onchange="theme()" name="moreInfo" />
+                          <span class="slider"></span>
+                        </label>
+                      </section>
+                   </fieldset>
+               </form>
+        </section> 
+        <script>
+            const theme =  ()=>{
+                const mood = document.querySelector(".box").checked;
+        body = document.querySelector("body").style;
+hamburger = document.querySelector(".hamburger").style; 
+youtubeSpam = document.querySelector(".youtube").style;
+searchBox = document.querySelector(".search-box").style;
+user = document.querySelector(".fa-adn").style;
+uploadTitle = document.querySelector(".upload-title").style;
+aside = document.querySelector(".aside").style;
+dropMenu = document.querySelector(".drop-menu").style;
+hamburgerDiv = document.querySelectorAll(".hamburger-div");
+asideIcons = document.querySelectorAll(".fas");
+console.log(asideIcons);
+
+
+
+
+  if (mood) {
+
+
+    body.backgroundColor = "black";
+    hamburger.borderWigth = "4vh";
+    hamburger.borderHeight = "4vh";
+    hamburger.display = "flex";
+    hamburgerAlignItems = "flex-start";
+hamburger.flexDirection = "column";
+hamburger.justifyContent = "space-eventuly";
+    youtubeSpam.color = "white";
+    user.color = "white";
+    youtubeSpam.fontSize = "1rem";
+    searchBox.backgroundColor = "white";
+    uploadTitle.color = "white";
+    aside.backgroundColor = "grey";
+    dropMenu.backgroundColor = "lightgray"
+    dropMenu.zIndex = "1";
+
+    hamburgerDiv.forEach((div)=>{
+        div.style.border = "0.2rem white solid";
+    });
+        
+asideIcons.forEach(({style}, i)=>{
+    if (i == 1 || i == 2 || i == 3 ){
+       
+       style.color = "white";
+   }
+   else {
+       style.color = "black";
+   }
+});
+
+
+            
+    
+    
+
+    
+
+
+    
+  } else {
+    body.backgroundColor = "white";
+    aside.backgroundColor = "white";
+    hamburgerDiv.forEach((div)=>{
+        div.style.border = "0.2rem black solid";
+    });
+
+
+    
+  }
+};
+
+            
+
+
+
+        </script>
+    
+
+        
+        </section>
+    
+<section class="section-aside">
+
+    <div class="aside">
+            <div >
+                <ul>
+                    <li><a  href="#"><i class="fas fa-home"></i>Home</a></li></br>
+                    <li><a href="#"><i class="fas fa-fire"></i>Trending</a></li></br>
+                    <li><i class="fab fa-youtube"></i><a  href="#"><span class="aside-youtube">subscription</span></a></li>
+                    </br>
+                </ul>
+            </div>
+<div class="line1"></div>
+            <div >
+                <ul>
+                    <li><a href="#"><i class="fas fa-photo-video"></i> library</a></li>
+                    </br>
+                    <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+                    </br>
+                    <li><a href="#"><i class="fas fa-film"></i> Your Videos</a></li>
+                    </br>
+                    <li><a href="#"><i class="far fa-clock"></i> Watch later</a></li>
+                    </br>
+                    <li><a href="#"><i class="fas fa-thumbs-up"></i> Favorites</a></li>
+                    </br>
+                    <li><a class="show-more" href="#">Show more</a></li></br>
+
+                </ul>
+            </div>
+<div>
+    <div class="line2"></div>
+                <div class="subscription">Subscription</div>
+</br>
+                <ul>
+                    <li><a href="#"><i class="fas fa-space-shuttle"></i> Space</a></li></br>
+                    <li><a href="#"><i class="fas fa-igloo"></i> Dw Deutsh</a></li></br>
+                    <li><a href="#"><i class="fas fa-igloo"></i> DW</a></li></br>
+                    <li><a href="#"><i class="fas fa-globe-americas"></i> Welt</a></li></br>
+                    <li><a href="#"><i class="fas fa-baseball-ball"></i> Bein sport</a></li></br>
+                    <li><i class="fas fa-tv"></i><a href="#"> Halab tV</a></li></br>
+                    <li><a href="#">Show 112 more</a></li></br>
+
+
+
+                </ul>
+            </div>
+            <h3>More from Yutube</h3></br>
+            <ul>
+                <li><a  href="#"><i class="fab fa-youtube"></i><span class="youtube-premium">Youtube Premium</span></a></li></br>
+                <li><a href="#"><i class="fas fa-film"></i>Movies Shows</a></li>
+            </ul>
+            </section>
+
+            <script>
+            let clicked = false;
+        document.querySelector(".hamburger").addEventListener("click",()=>
+        {
+            clicked = !clicked;
+            if(clicked){
+                document.querySelector(".drop-menu").style.cssText  = 
+                "display: block; position: absolute;top: 3vh;left:0;z-index: 1;"}
+else{
+    document.querySelector('.drop-menu').style.cssText = "display: none;"
+            
+}
+        });
+
+
+            </script>
+        
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
