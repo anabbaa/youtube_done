@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="hamburger">
             <div class="hamburger-div first-line"></div>
@@ -26,8 +25,6 @@
                 </ui>
        
         <div class="header__menu">
-            
-
             <i class="fab fa-youtube"></i><span class="youtube">YOUTUBE</span>
         </div>
         <div class="header__search">
@@ -58,12 +55,6 @@
                 <img class="img" src="./img/Screenshot from 2021-03-10 10-47-14.png" all="hilton" />
 
             </div>
-
-
-
-
-
-            
                 <div class="subscriber">
                     <img class="img-subscriber" src="./img/vXsT1YWm_400x400.jpg" alt="hiltons" />
                     <span class="span-subscriber">
@@ -71,7 +62,6 @@
                         <h2 class="h2">1.05Msubscriber</h2>
                     </span>
                     <button class="button-subscriber">subscriber</button>
-
 
                     <nav>
                         <ul>
@@ -93,48 +83,40 @@
                                     <button><i class="fas fa-search"></i>
                                     </button></a>
                             <li>
-
                         </ul>
                     </nav>
-                
-
             </div>
-
-
-
-
-            
+   
             <section class="uploads-section">
            <div class="uploads-father">
             <div class="upload-title">Uploads</div>
             <div class="videos">
-                <div class="upload"><img src="./img/1.png" allt="video" /></div>
-                <div class="upload"><img src="./img/2.png" allt="video" /></div>
-                <div class="upload"><img src="./img/3.png" alt="video" /></div>
-                <div class="upload"><img src="./img/4.png" alt="video" /></div>
-                <div class="upload"><img src="./img/5.png" alt="video" /></div>
-                <div class="upload"><img src="./img/6.png" alt="video" /></div>
-                <div class="upload"><img src="./img/7.png" alt="video" /></div>
-                <div class="upload"><img src="./img/8.png" alt="video" /></div>
-                <div class="upload"><img src="./img/9.png" alt="video" /></div>
-                <div class="upload"><img src="./img/10.png" alt="video" /></div>
-                <div class="upload"><img src="./img/11.png" alt="video" /></div>
-                <div class="upload"><img src="./img/12.png" alt="video" /></div>
+                <div class="upload"><img src="./img/1.png" allt="video" height="200px" width="200px" /></div>
+                <div class="upload"><img src="./img/2.png" allt="video" height="200px" width="200px" /></div>
+                <div class="upload"><img src="./img/3.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/4.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/5.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/6.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/7.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/8.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/9.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/10.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/11.png" alt="video" height="200px" width="200px"/></div>
+                <div class="upload"><img src="./img/12.png" alt="video" height="200px" width="200px"/></div>
             </div>
            </div> 
-           
-               <form class="theme">
-                   <fieldset>
+               
+            
                     <section class="toggle">
                         <label class="toggle-lable"></label>
                         <label class="switch">
                           <input type="checkbox" class="box" onchange="theme()" name="moreInfo" />
-                          <span class="slider"></span>
+                          <span class="slider"><span>Change Theme</span></span>
                         </label>
                       </section>
-                   </fieldset>
-               </form>
+                
         </section> 
+
         <script>
             const theme =  ()=>{
                 const mood = document.querySelector(".box").checked;
@@ -150,13 +132,8 @@ hamburgerDiv = document.querySelectorAll(".hamburger-div");
 asideIcons = document.querySelectorAll(".fas");
 console.log(asideIcons);
 
-
-
-
   if (mood) {
-
-
-    body.backgroundColor = "black";
+    body.backgroundColor = " hsl(249,6%,18%)";
     hamburger.borderWigth = "4vh";
     hamburger.borderHeight = "4vh";
     hamburger.display = "flex";
@@ -184,41 +161,19 @@ asideIcons.forEach(({style}, i)=>{
    else {
        style.color = "black";
    }
-});
-
-
-            
-    
-    
-
-    
-
-
-    
+});    
   } else {
     body.backgroundColor = "white";
     aside.backgroundColor = "white";
     hamburgerDiv.forEach((div)=>{
         div.style.border = "0.2rem black solid";
-    });
-
-
-    
+    });  
   }
 };
-
-            
-
-
-
-        </script>
-    
-
-        
+        </script>   
         </section>
     
 <section class="section-aside">
-
     <div class="aside">
             <div >
                 <ul>
@@ -257,9 +212,6 @@ asideIcons.forEach(({style}, i)=>{
                     <li><a href="#"><i class="fas fa-baseball-ball"></i> Bein sport</a></li></br>
                     <li><i class="fas fa-tv"></i><a href="#"> Halab tV</a></li></br>
                     <li><a href="#">Show 112 more</a></li></br>
-
-
-
                 </ul>
             </div>
             <h3>More from Yutube</h3></br>
@@ -282,21 +234,8 @@ else{
             
 }
         });
-
-
             </script>
-        
-
-
-
 </div>
 </div>
-
-
-
-
-
-
 </body>
-
 </html>

@@ -6,23 +6,79 @@
   height: 0;
 }
 
+
 .switch {
   position: relative;
+  background-color: blueviolet;
 }
 
 .slider {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 25vh;
+  left: 85vh;
   right: 0;
   bottom: 0;
   height: 4vh;
-  width: 8vw;
+  width: 9vw;
   cursor: pointer;
   background-color:blue;
   transition: 0.2s;
+  @include responsive (bigscreen){
+    top: 55vh;
+    left: 50vw;
+    height: 3vw;
+    width: 12vw;
+  }
+  @include responsive (smallscreen){
+    top: 55vh;
+    left: 50vw;
+    height: 6vw;
+    width: 10vw;
+  }
+  @include responsive (laptop){
+    top: 75vh;
+    left: 50vw;
+    height: 8vw;
+    width: 12vw;
+  }
+  @include responsive (smalltap){
+    top: 130vh;
+    height: 12vw;
+    width: 22vw;
+    
+    
+  }
+  @include responsive (smallertap){
+    top: 280vh;
+    
+  }
+  @include responsive (mobile){
+    top: 280vh;
+    left: 50vw;
+    height: 16vw;
+    width: 32vw;
+    
+  }
+  @include responsive (smallmobile){
+    top: 280vh;
+    left: 50vw;
+    height: 16vw;
+    width: 32vw;
+    
+  }
 }
-
+.slider span{
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  left: 2vw;
+  top: 1vh;
+  font-weight: bolder;
+  @include responsive(smallmobile){
+    font-size: 10px;
+    left: 2vh;
+  }
+}
 .slider::before {
   position: absolute;
   content: "";
@@ -43,14 +99,14 @@ input:checked + .slider::before {
 }
 
 
-
-.theme{
-  margin: 25% auto;
-  height: 0;
-  width: 0;
-
+.checkbox {
+  background-color: red;
+  border: 1px solid black;
 }
-  
+.box{
+  background-color: blueviolet;
+}
+
   
   
   

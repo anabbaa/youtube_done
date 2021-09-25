@@ -24,19 +24,82 @@
    font-weight: bolder;
    font-family: Georgia, 'Times New Roman', Times, serif;
    position: relative;
-   left: 10vw;
+   left: 12vw;
    top:2vh;
+   
+   @include responsive (smallmobile) {
+       left: 8vh;
+   }
+   @include responsive (mobile) {
+    left: 8vh;
+}
+@include responsive (smallertap) {
+    left: 8vh;
+}
+@include responsive (smalltap) {
+    left: 8vh;
+}
 }
 
 .videos{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     height:$videos-height;
     width:$videos-width;
     position: relative;
-    left: 6vw;
-    top: 6vh
+    left: 22vw;
+    top: 6vh;
+    @include responsive (bigscreen){
+        height: 300px;
+        width: 1250px;
+        left: 2vw
+    }
+    @include responsive (smallscreen){
+        height: 600px;
+        width: 800px;
+        left: -50vw
+    }
+    @include responsive (biglaptop){
+        height: 600px;
+        width: 800px;
+        left: -60vw
+    }
+    @include responsive (laptop){
+        height: 600px;
+        width: 600px;
+        left: -99vw
+    }
+    @include responsive (bigtap){
+        height: 400px;
+        width: 400px;
+        left: -155vw;
+    }
+    @include responsive (tap){
+        height: 400px;
+        width: 400px;
+        left: -170vw;
+    }
+    @include responsive (smalltap){
+        height: 400px;
+        width: 400px;
+        left: -210vw;
+    }
+    @include responsive (smallertap){
+        height: 400px;
+        width: 200px;
+        left: -290vw;
+    }
+    @include responsive (mobile){
+        height: 400px;
+        width: 200px;
+        left: -320vw;
+    }
+    @include responsive (smallmobile){
+        height: 400px;
+        width: 200px;
+        left: -400vw;
+    }
 }

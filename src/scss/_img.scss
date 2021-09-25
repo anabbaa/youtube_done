@@ -37,6 +37,21 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     cursor: pointer;
     font-size: 1.5rem;
+    @include responsive (bigscreen){
+        top: -6vh;
+        left: 122vh;
+    }
+    @include responsive (smallscreen){
+        top: -6vh;
+        left: 65vh;
+    }
+    @include responsive (biglaptop){
+        top: -3vh;
+        left: 55vw;
+    }
+    @include responsive (laptop){
+        top: -1vh;
+    }
 
 }
 .button-subscriber:hover{
