@@ -10,9 +10,7 @@
     border-top: 0.1rem gray solid;
     height: $line1-height;
     width: $line1-width;
-    @include responsive (bigscreen){
-        width: 2vw;
-    }
+    
 
 }
 .line2{
@@ -26,4 +24,10 @@ li{
 }
 .section-aside a{
     color: black;
+}
+.subscription{
+    font-size: 18px;
+    @include responsive(smallscreen){
+        font-size: 12px;
+    }
 }
