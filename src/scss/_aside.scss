@@ -1,0 +1,50 @@
+.aside{
+    align-self: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+    width:10%;
+    order: -1;
+    font-size: 1rem;
+    margin-top: 2vh;
+}
+.ul-aside1{
+    width: 100%;
+    height: 10%;
+}
+.ul-aside1 ul li, .ul-aside2 ul li, .ul-aside3 li, .ul-aside4 li{
+    list-style: none;
+}
+.ul-aside1 ul li a, .ul-aside2 ul li a, .ul-aside3 li a, .ul-aside4 li a{
+    text-decoration: none;
+    color: #000000;
+}
+.ul-aside4{
+    height: 20%;
+}
+
+.ul-aside2{
+height:  20%;
+}
+.ul-aside3{
+    height:  20%;
+
+}
+.line1{
+    border-top: 0.1rem gray solid;
+    height: 4vh;
+    width: 7vw;
+    margin-top: 1vh;
+}
+.line2{
+    border-top: 0.1rem gray solid;
+    height: 4vh;
+    width: 7vw;
+
+}
+.subscription{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    height: 20;
+}
+
+  

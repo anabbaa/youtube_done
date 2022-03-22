@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+}
+
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+width:99vw;
+height: 100vh;  
+}
+/*father for the whole body*/
+ .page-father{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 99vw;
+    height: 100vh;
+
+} 
+ .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    width: 90%;
+    height: 100vh;
+    order: 1;
+} 

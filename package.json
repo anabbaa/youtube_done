@@ -1,0 +1,38 @@
+{
+  "name": "youtube_done",
+  "version": "1.0.0",
+  "description": "https://anabbaa.github.io/youtube_done/",
+  "main": "index.js",
+  "dependencies": {
+    "-": "^0.0.1",
+    "gh-pages": "^3.2.3",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-p watch watch:styles",
+    "build": "run-s clean clean:styles build:styles copy",
+    "deploy": "run-s build publish",
+    "build:styles": "sass src/scss:src/styles",
+    "watch": "live-server src",
+    "watch:styles": "sass src/scss:src/styles --watch",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
+    "publish": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anabbaa/youtube_done.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anabbaa/youtube_done/issues"
+  },
+  "homepage": "https://github.com/anabbaa/youtube_done#readme"
+}
