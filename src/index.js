@@ -6,10 +6,12 @@ document.querySelector(".hamburger").addEventListener("click",()=>
 
   
     if(clicked){
-        document.querySelector(".drop-menu").style.cssText  = 
-        "display: block; position: absolute;top: 3vh;left:0;z-index: 1;"}
+        document.querySelector('.drop-menu').style.cssText = "display: none;"
+
+    }
 else{
-document.querySelector('.drop-menu').style.cssText = "display: none;"
+document.querySelector(".drop-menu").style.cssText  = 
+"display: block; position: absolute;top: 3vh;left:0;z-index: 1;"
   
 }
 });
