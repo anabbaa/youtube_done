@@ -98,7 +98,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 99vw;
+  width: 95vw;
   height: 100vh;
 }
 
@@ -187,7 +187,6 @@ body {
 .uploads-father {
   width: 88vw;
   height: 100vh;
-  margin-top: 4vh;
 }
 .uploads-father .upload-title {
   height: 30px;
