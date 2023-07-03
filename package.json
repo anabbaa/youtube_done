@@ -1,7 +1,7 @@
 {
   "name": "youtube_done",
   "version": "1.0.0",
-  "description": "https://anabbaa.github.io/youtube_done/",
+  "homePage": "https://anabbaa.github.io/youtube_done/",
   "main": "index.js",
   "dependencies": {
     "-": "^0.0.1",
@@ -15,7 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p watch watch:styles",
     "build": "run-s clean clean:styles build:styles copy",
-    "deploy": "run-s build publish",
+    "predeploy": "npm run build ",
+    "deploy": "gh-pages -d build",
     "build:styles": "sass src/scss:src/styles",
     "watch": "live-server src",
     "watch:styles": "sass src/scss:src/styles --watch",

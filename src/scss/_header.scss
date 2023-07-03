@@ -7,7 +7,7 @@
     justify-content: space-between;
 
 .hamburger{
-    width: 4vh;
+    width: 5%;
     height: 4vh;
     display: flex;
     justify-content: space-evenly;
@@ -58,18 +58,23 @@
     }
 }
 .header__search {
-    width: 43%;
+    width: 44%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     .search-box {
-        width: 50%;
+        width: 80%;
+    }
+    .search-box{
+        width: 22vw;
     }
 } 
  
 .header__icons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 10%;
-  
-    
 }
 .fas{
     color: grey;
@@ -77,10 +82,8 @@
 .fa-adn{
     color: rgb(0, 140, 255);
 }
-.fa-youtube{
+.fa-youtube, .youtube{
     color: red;
-}
-.youtube{
-    color: red;
+    font-size: 2rem;
 }
 }

@@ -11,69 +11,73 @@ height: 50vh;
     height: 31vh;
     display: flex;
     justify-content: flex-start;
+    .img{    
+        width: 89vw;
+          height: 12vw;
+    }
 }
-.img{    
-    width: 89vw;
-      height: 12vw;
-}
-
-
 .subscriber{
         width: 89vw;
     height: 30vh;
     background-color: black;
+    .img-subscriber{
+        height: 12vh;
+        width: 8vw;
+    }
+    .span-subscriber{
+        position: absolute;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        .h2{
+            font-size: 1rem;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+    }
+    .button-subscriber-father{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 5vh;
     
+    .button-subscriber{
+        margin-right: 2vw;
+        width: 18vh;
+        height: 4vw;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    
+    &:hover{
+        transition: all 1s;
+        transform: scale(1.2);
+    }
 }
- .img-subscriber{
-     height: 12vh;
-     width: 8vw;
- }
-.span-subscriber{
-    position: absolute;
-    font-size: 2rem;
-    text-align: center;
-    color: white;
+.nav-subscriber{
+    margin: 2% auto;
+    height: 2vh;
+    margin-left:  2vh;
 }
-.h2{
-font-size: 1rem;
-font-style: italic;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.button-subscriber{
-    position: relative;
-    left:  75%;
-    top: -3vh;
-    bottom:  42%;
-    width: 18vh;
-    height: 4vw;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    font-size: 1.5rem;
-
-}
-
-.button-subscriber:hover{
-    transition: all 1s;
-    transform: scale(1.2);
+    }
 }
 
 .subscriber nav ul{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-
-}
-.subscriber nav ul li{
-    display: inline;
-    list-style: none;
+    .subscriber nav ul li{
+        display: inline;
+        list-style: none;    
+    }
 }
 .subscriber nav ul li a{
     color: white;
     text-decoration: none;
+    &:hover{
+        color: purple;
+    }
 }
-.subscriber nav ul li a:hover{
-    transition: all 1s;
-    transform: scale(1.2);
-}  
-  }
