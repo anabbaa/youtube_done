@@ -6,7 +6,7 @@
   justify-content: space-between;
 }
 .header .hamburger {
-  width: 4vh;
+  width: 5%;
   height: 4vh;
   display: flex;
   justify-content: space-evenly;
@@ -51,27 +51,32 @@
   font-weight: bolder;
 }
 .header .header__search {
-  width: 43%;
+  width: 44%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 .header .header__search .search-box {
-  width: 50%;
+  width: 80%;
+}
+.header .header__search .search-box {
+  width: 22vw;
 }
 .header .header__icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 10%;
 }
 .header .fas {
   color: grey;
 }
 .header .fa-adn {
-  color: #008cff;
+  color: rgb(0, 140, 255);
 }
-.header .fa-youtube {
+.header .fa-youtube, .header .youtube {
   color: red;
-}
-.header .youtube {
-  color: red;
+  font-size: 2rem;
 }
 
 * {
@@ -126,7 +131,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.subscriber-father .img {
+.subscriber-father .img-div .img {
   width: 89vw;
   height: 12vw;
 }
@@ -135,26 +140,29 @@ body {
   height: 30vh;
   background-color: black;
 }
-.subscriber-father .img-subscriber {
+.subscriber-father .subscriber .img-subscriber {
   height: 12vh;
   width: 8vw;
 }
-.subscriber-father .span-subscriber {
+.subscriber-father .subscriber .span-subscriber {
   position: absolute;
   font-size: 2rem;
   text-align: center;
   color: white;
 }
-.subscriber-father .h2 {
+.subscriber-father .subscriber .span-subscriber .h2 {
   font-size: 1rem;
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.subscriber-father .button-subscriber {
-  position: relative;
-  left: 75%;
-  top: -3vh;
-  bottom: 42%;
+.subscriber-father .subscriber .button-subscriber-father {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 5vh;
+}
+.subscriber-father .subscriber .button-subscriber-father .button-subscriber {
+  margin-right: 2vw;
   width: 18vh;
   height: 4vw;
   background-color: red;
@@ -162,26 +170,33 @@ body {
   cursor: pointer;
   font-size: 1.5rem;
 }
-.subscriber-father .button-subscriber:hover {
+.subscriber-father .subscriber .button-subscriber-father:hover {
   transition: all 1s;
   transform: scale(1.2);
 }
-.subscriber-father .subscriber nav ul {
+.subscriber-father .subscriber .nav-subscriber {
+  margin: 2% auto;
+  height: 2vh;
+  margin-left: 2vh;
+}
+
+.subscriber nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-.subscriber-father .subscriber nav ul li {
+.subscriber nav ul .subscriber nav ul li {
   display: inline;
   list-style: none;
 }
-.subscriber-father .subscriber nav ul li a {
+
+.subscriber nav ul li a {
   color: white;
   text-decoration: none;
 }
-.subscriber-father .subscriber nav ul li a:hover {
-  transition: all 1s;
-  transform: scale(1.2);
+.subscriber nav ul li a:hover {
+  color: purple;
 }
 
 .uploads-father {
@@ -206,17 +221,12 @@ body {
 }
 
 .aside {
-  align-self: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
   height: 150vh;
   width: 10%;
   order: -1;
   font-size: 1rem;
-  margin-top: 2vh;
-}
-.aside .ul-aside1 {
-  width: 100%;
-  height: 10%;
+  margin-left: 2vw;
 }
 .aside .ul-aside1 ul li, .aside .ul-aside2 ul li, .aside .ul-aside3 li, .aside .ul-aside4 li {
   list-style: none;
@@ -225,20 +235,10 @@ body {
   text-decoration: none;
   color: #000000;
 }
-.aside .ul-aside4 {
-  height: 20%;
-}
-.aside .ul-aside2 {
-  height: 20%;
-}
-.aside .ul-aside3 {
-  height: 20%;
-}
 .aside .line1 {
   border-top: 0.1rem gray solid;
   height: 4vh;
   width: 7vw;
-  margin-top: 1vh;
 }
 .aside .line2 {
   border-top: 0.1rem gray solid;
@@ -249,6 +249,11 @@ body {
   font-size: 1.5rem;
   font-weight: bolder;
   height: 20;
+  width: 10%;
+  margin-bottom: 2vh;
+}
+.aside .ul-aside4 {
+  height: 50%;
 }
 
 .switch input {
@@ -262,8 +267,7 @@ body {
   width: 4rem;
   height: 2rem;
 }
-
-.slider {
+.switch .slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -274,8 +278,7 @@ body {
   transition: 0.2s;
   border-radius: 5rem;
 }
-
-.slider::before {
+.switch .slider:before {
   position: absolute;
   content: "";
   left: 0.25rem;
