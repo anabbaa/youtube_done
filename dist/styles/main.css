@@ -74,8 +74,12 @@
 .header .fa-adn {
   color: rgb(0, 140, 255);
 }
-.header .fa-youtube, .header .youtube {
+.header .fa-youtube {
   color: red;
+  font-size: 2rem;
+}
+.header .youtube {
+  color: black;
   font-size: 2rem;
 }
 
@@ -207,6 +211,7 @@ body {
   height: 30px;
   width: 1px;
   font-size: 1.5rem;
+  margin-left: 1vw;
   font-weight: bolder;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
