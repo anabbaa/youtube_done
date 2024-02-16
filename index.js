@@ -68,9 +68,9 @@ hamburger.display = "flex";
 hamburgerAlignItems = "flex-start";
 hamburger.flexDirection = "column";
 hamburger.justifyContent = "space-eventuly";
-youtubeSpam.color = "white";
+youtubeSpam.color = "red";
 user.color = "white";
-youtubeSpam.fontSize = "1rem";
+youtubeSpam.fontSize = "2rem";
 uploadTitle.color = "white";
 aside.backgroundColor = "grey";
 dropMenu.backgroundColor = "lightgray"
@@ -88,10 +88,11 @@ style.color = "white";
 } else {
 body.backgroundColor = "white";
 aside.backgroundColor = "white";
+uploadTitle.color = "black";
+youtubeSpam.color = "black";
 hamburgerDiv.forEach((div)=>{
 div.style.border = "0.2rem black solid";
 dropMenu.backgroundColor= "yellow";
-youtubeSpam.color ="red";
 asideIcons.forEach(({style},i)=>{
     if (i == 1 || i ==2 || i == 3){
         style.color = "black";
@@ -100,3 +101,4 @@ asideIcons.forEach(({style},i)=>{
 });
 }
 };
+
