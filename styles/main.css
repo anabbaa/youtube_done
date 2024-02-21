@@ -99,7 +99,7 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-  width: 99vw;
+  width: 98vw;
   height: 100vh;
 }
 
@@ -109,7 +109,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 95vw;
+  width: 75vw;
   height: 100vh;
 }
 
